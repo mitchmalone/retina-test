@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>MacBook Pro with Retina - Image Retention Test</title>
+
+        <meta name="description" content="Test your MacBook Pro for image retention / ghosting / halo faults.">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+		<div id="white">
+			<p>This test is designed to test your MacBook Pro with Retina screen for image retention.</p>
+			
+			<p>
+				<strong>Instructions</strong>
+				<ol>
+					<li>Open this URL in full screen mode in your browser. For best results use Safari since it will fill the entire screen.</li>
+					<li>Choose a duration and click "begin test."</li>
+					<li>the grid to display for 3 minutes and the countdown to expire. <strong>IMPORTANT NOTE:</strong> Since human eyes are easily tricked and actually have a form of "image retention" of their own you should not stare at the screen or watch it too closely.</li>
+					<li>After 3 minutes the screen will display black, you should then inspect the screen and see if the checker pattern is still visible.</li>
+				</ol>
+			</p>
+			
+			<form>
+				<select>
+					<option value="1">1 minute</option>
+					<option value="2">2 minutes</option>
+					<option value="3" selected="selected">3 minutes</option>
+					<option value="4">4 minutes</option>
+					<option value="5">5 minutes</option>
+					<option value="6">6 minutes</option>
+					<option value="7">7 minutes</option>
+					<option value="8">8 minutes</option>
+					<option value="9">9 minutes</option>
+					<option value="10">10 minutes</option>
+				</select><input type="submit" value="Begin Test" />
+			</form>
+		</div>
+
+		<div id="checkers">
+			<div id="timer"></div>
+		</div>
+
+		<div id="black"></div>
+
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+    </body>
+</html>

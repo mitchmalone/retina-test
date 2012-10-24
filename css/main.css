@@ -1,0 +1,38 @@
+/* BEGIN SIMPLE CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, * {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+/* END CSS RESET */
+
+/* BEGIN CLEAR FIX */
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+/* END CLEAR FIX */
+
+body { overflow: hidden; font-family: Helvetica, Arial, Sans-Serif; }
+
+div#white { width: 560px; color: #ffffff; background: #7e7e7e; margin: 100px auto; padding: 20px; }
+	div#white p { margin: 10px 0; }
+	div#white ol { margin-left: 40px; }
+		div#white ol li { margin: 0 0 10px 0; }
+	div#white a:link, div#white a:hover, div#white a:visited, div#white a:active { color: #0000ff; }
+	div#white form { text-align: center; }
+		div#white form select { background: #666; color: #fff; font-size: 13px; padding: 6px 10px; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 120px; appearance:button; border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+		div#white form input[type=submit] { background: #666; color: #fff; font-size: 13px; padding: 6px 10px; margin: 0 0 0 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
+
+div#checkers { display: none; position: abosolute; top: 0; left: 0; width: 100%; height: 100%; background-color: white; background-image: -moz-linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), -moz-linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black); background-size:401px 401px; background-position: 0 0, 200px 200px; }
+	div#timer { position: absolute; width: 200px; height: 200px; top: 0px; left: 200px; padding: 80px 70px; font-size: 24px; color: #cecece; }
+
+div#black { position: abosolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0; display: none; }
