@@ -39,7 +39,7 @@
 			updateDisplay: function() {
 				console.log('RETINA.test.updateDisplay();');
 				
-				$('div#checkers, div#black').css({
+				$('div#checkers, div#white').css({
 					width: $(window).width(),
 					height: $(window).height()
 				});
@@ -49,7 +49,7 @@
 				console.log('RETINA.test.startTest();');
 
 				// Switch screens
-				$('div#white').hide();
+				$('div#white').fadeOut('fast');
 				$('div#checkers').show();
 
 				var _this = this,
@@ -74,7 +74,7 @@
 				console.log('RETINA.test.finishTimer();');
 
 				clearInterval(this.timer);
-				$('div#timer').fadeOut('fast');
+				$('div#checkers').fadeOut('fast');
 			}
 		}
 	});
