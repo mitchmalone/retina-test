@@ -19,14 +19,6 @@ body {
 #footer {
   background-color: #f5f5f5;
 }
-@media (max-width: 767px) {
-  #footer {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
 .container {
   width: auto;
   max-width: 680px;
@@ -85,4 +77,17 @@ div#black.red {
 }
 div#black.greybumps {
   background: #242424 url('../img/dots.png') !important;
+}
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 0) {
+  div#checkers {
+    background: url('../img/checker.png') !important;
+  }
 }
